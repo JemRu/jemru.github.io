@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>·静如·</title>
+        <meta name="author" content="Jem">
+        <meta name="description" content="Welcome to my personal Web sites.欢迎访问静如的个人网页。我差不多是一条咸鱼了。">
+        <meta name="viewport" content="initial-scale=1, minimal-ui" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/maincon.css">
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9con.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8con.css" /><![endif]-->
+        <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+                            <a href="index.html"><span class="avatar"><img src="img/pic02.jpg" alt="" /></span></a>
+							<h1>Jing Ru</h1>
+							<p>但行好事·不忘初心</p>
+						</header>
+
+						<hr />
+						<P>相遇相知，更期待能与你共事。</P>
+						<hr />
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-wechat">Wechat</a></li>
+								<li><a href="http://weibo.com/u/3645410161" class="fa-weibo">Weibo</a></li>
+								<li><a href="https://github.com/JemRu" class="fa-github">Github</a></li>
+                                <li><a href="mailto:Jem_Ru@163.com" class="fa-envelope">Email</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 2016 Jem</li>
+							<li><a href="http://www.miitbeian.gov.cn">鲁ICP备16031565</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="js/vendor/respond.min.js"></script><![endif]-->
+            <script src="js/jquery.min.js"></script>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+                $(document).ready(function(){
+                    $(".fa-wechat").mouseover(function(){
+                        $(".avatar").children().attr("src","img/pic03.jpg");
+                    });
+                    $(".fa-wechat").mouseout(function(){
+                        $(".avatar").children().attr("src","img/pic02.jpg");
+                    });
+                });
+			</script>
+
+	</body>
+</html>
